@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-
+    <div class="content">
+     <div class="container">
         <h2>Nail - Agendamento</h2>
         <input type="text" id="nome" placeholder="Nome da Cliente">
         <input type="time" id="horario">
         <input type="date" name="" id="data">
         <button onclick="adicionarAgendamento()"> Agendar</button>
+     </div>
+
+     <div class="img-container">
+        <img src="./img/imggrande.jpg" 
+        srcset="./img/imgpequena.jpg 480w, ./img/imgmedia.jpg 768w"
+        sizes="(max-width: 600px) 480px, (max-width: 767px) 1200px" alt="imagem responsiva">
     </div>
+</div>
 </body>
 </html>
