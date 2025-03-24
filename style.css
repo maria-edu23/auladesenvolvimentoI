@@ -82,11 +82,4 @@ input {
     border-radius: 5px;
 }
      
-.agendamento { 
-    display: flex;
-    justify-content: space-between; 
-    background: #f3f3f3; 
-    padding: 10px;
-    margin: 5px 0;
-}
 
