@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4;
+    background-color: #d8d5d5;
+}
+
+header, nav, main, footer {
+    padding: 2%;
+    margin: 1% auto;
+    max-width: 1200px;
+    background-color: #fff;
+}
+
+header {
+    color: #0f0505;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: antiquewhite;
+    padding: 1%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0f0505;
+}
+
+main section {
+    padding: 2%;
+}
+
+footer {
+    text-align: center;
+    background-color: #ddd;
+    padding: 1%;
+}
+
+.agendar-horario {
+    background-image: url('unhas.jpg');
+    background-size: cover; /* faz a imagem cobrir a tela toda */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* impede repetição */
+    background-attachment: fixed; /* mantém a imagem fixa quando rolar */
+    height: 100vh; /* garante que a imagem cubra toda a altura da página */
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.7); /* fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Para telas menores que 768px (como tablets e celulares em modo paisagem) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; /* diminui o tamanho do título */
+    }
+
+    nav ul {
+        flex-direction: column; /* empilha os itens verticalmente */
+        align-items: center; /* centraliza os itens */
+    }
+    .content {
+        width: 90%; /* aumenta a largura do formulário */
+        margin-top: 20px; /* dá mais espaço no topo */
+    }
+
+    .agendar-horario {
+        background-size: cover; /* imagem de fundo ajustada */
+    }
+}
