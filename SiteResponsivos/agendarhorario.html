@@ -10,13 +10,26 @@
     <div class="content">
         <div class="container">
             <h2>Nail - Agendamento</h2>
-            <input type="text" id="nome" placeholder="Nome da Cliente">
-            <input type="time" id="horario">
-            <input type="date" id="data">
-            <button onclick="adicionarAgendamento()"> Agendar</button>
+            <form class="formulario">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Nome da Cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data">
+                </div>
+
+                <div class="campo">
+                    <label for="horario">Horário:</label>
+                    <input type="time" id="horario">
+                </div>
+
+                <button type="submit" onclick="adicionarAgendamento()">Agendar</button>
+            </form>
         </div>
         <a href="index.html">Voltar para página inicial</a>
     </div>
-    
 </body>
 </html>

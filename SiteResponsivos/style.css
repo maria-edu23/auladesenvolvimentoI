@@ -8,6 +8,9 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.4;
     background-color: #d8d5d5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header, nav, main, footer {
@@ -15,6 +18,7 @@ header, nav, main, footer {
     margin: 1% auto;
     max-width: 1200px;
     background-color: #fff;
+    width: 95%;
 }
 
 header {
@@ -24,15 +28,21 @@ header {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     list-style: none;
     background-color: antiquewhite;
     padding: 1%;
+    gap: 35%;
+    padding: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #0f0505;
+}
+
+a:hover {
+    color: #df2929;
 }
 
 main section {
@@ -43,43 +53,130 @@ footer {
     text-align: center;
     background-color: #ddd;
     padding: 1%;
+    margin-top: auto;
 }
 
 .agendar-horario {
     background-image: url('unhas.jpg');
-    background-size: cover; /* faz a imagem cobrir a tela toda */
-    background-position: center; /* centraliza a imagem */
-    background-repeat: no-repeat; /* impede repetição */
-    background-attachment: fixed; /* mantém a imagem fixa quando rolar */
-    height: 100vh; /* garante que a imagem cubra toda a altura da página */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .content {
-    background-color: rgba(255, 255, 255, 0.7); /* fundo branco semi-transparente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 400px;
-    margin: 50px auto;
     text-align: center;
+    gap: 20px;
 }
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.campo label {
+    width: 100px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.campo input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button { 
+    margin-top: 10px;
+    padding: 10px; 
+    width: 100%; 
+    background-color: #fd2e58;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a0e24;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Deixa o container ocupar 100% da largura da tela */
+    }
+
+    .campo {
+        flex-direction: column; /* Empilha o label e o input na vertical */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        gap: 5px;
+    }
+
+    .campo label {
+        width: auto; /* Deixa o label com o tamanho ajustado ao conteúdo */
+        text-align: left;
+    }
+
+    .campo input {
+        width: 100%; /* Faz o input ocupar 100% da largura do campo */
+    }
+
+    button {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    }
+}
+
+
 
 /* Para telas menores que 768px (como tablets e celulares em modo paisagem) */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.8em; /* diminui o tamanho do título */
+        font-size: 1.8em; 
     }
 
     nav ul {
-        flex-direction: column; /* empilha os itens verticalmente */
-        align-items: center; /* centraliza os itens */
+        flex-direction: column; 
+        align-items: center; 
     }
     .content {
-        width: 90%; /* aumenta a largura do formulário */
-        margin-top: 20px; /* dá mais espaço no topo */
+        width: 90%; 
+        margin-top: 20px; 
     }
 
     .agendar-horario {
-        background-size: cover; /* imagem de fundo ajustada */
+        background-size: cover; 
     }
 }
