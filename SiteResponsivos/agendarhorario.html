@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Agendar horário</title>
 </head>
 <body class="agendar-horario">
     <div class="content">
         <div class="container">
-            <h2>Nail - Agendamento</h2>
+            <h2 id="Texto">Nail - Agendamento</h2>
             <form class="formulario">
                 <div class="campo">
                     <label for="nome">Nome:</label>
@@ -26,7 +27,7 @@
                     <input type="time" id="horario">
                 </div>
 
-                <button type="submit" onclick="adicionarAgendamento()">Agendar</button>
+                <button type= "button" onclick="adicionarAgendamento()" >Agendar</button>
             </form>
         </div>
         <a href="index.html">Voltar para página inicial</a>

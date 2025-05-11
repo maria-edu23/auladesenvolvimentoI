@@ -180,3 +180,8 @@ a {
         background-size: cover; 
     }
 }
+
+.destaque {
+    color: green;
+    font-size: 30px;
+}
