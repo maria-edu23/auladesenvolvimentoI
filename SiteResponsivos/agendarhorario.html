@@ -11,23 +11,25 @@
     <div class="content">
         <div class="container">
             <h2 id="Texto">Nail - Agendamento</h2>
-            <form class="formulario">
+            <form action="https://webhook.site/1c086b2f-6d30-4bc1-8d28-81fca36434d5" method="POST" class="formulario" onsubmit="adicionarAgendamento()">
+
                 <div class="campo">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" placeholder="Nome da Cliente">
+                    <input type="text" name="nome">
                 </div>
 
                 <div class="campo">
                     <label for="data">Data:</label>
-                    <input type="date" id="data">
+                    <input type="date" name="data">
                 </div>
 
                 <div class="campo">
                     <label for="horario">Horário:</label>
-                    <input type="time" id="horario">
+                    <input type="time" name="horario">
                 </div>
 
-                <button type= "button" onclick="adicionarAgendamento()" >Agendar</button>
+                <button type="submit">Agendar</button>
+
             </form>
         </div>
         <a href="index.html">Voltar para página inicial</a>

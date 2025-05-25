@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="cadastro-cliente">
+    <div class="content">
+       <div class="container">
+         <h2 id="Texto">Cadastro do cliente</h1>
+            <form action="https://webhook.site/1c086b2f-6d30-4bc1-8d28-81fca36434d5" method="POST" class="formulario">
+                <div class="campo">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="nome" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+
+                    <input type="tel" name="telefone" placeholder="(99)9999-9999" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" name="dataNascimento" required>
+                </div>
+                <button type="submit">Cadastrar cliente</button>
+            </form>
+        </div>
+        <a href="index.html">Voltar ao início</a>
+    </div>
+</body>
+</html>

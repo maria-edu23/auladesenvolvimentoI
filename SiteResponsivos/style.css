@@ -19,6 +19,7 @@ header, nav, main, footer {
     max-width: 1200px;
     background-color: #fff;
     width: 95%;
+    flex-wrap: wrap;
 }
 
 header {
@@ -28,12 +29,11 @@ header {
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
-    background-color: antiquewhite;
+    background-color: #e79ab4;
     padding: 1%;
-    gap: 35%;
-    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -46,8 +46,9 @@ a:hover {
 }
 
 main section {
-    padding: 2%;
+    padding: 100px;
 }
+
 
 footer {
     text-align: center;
@@ -56,6 +57,7 @@ footer {
     margin-top: auto;
 }
 
+/*css formulario*/
 .agendar-horario {
     background-image: url('unhas.jpg');
     background-size: cover;
@@ -80,7 +82,7 @@ footer {
     padding: 2rem;
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #ffffffb3;
 }
 
 .formulario {
@@ -98,13 +100,13 @@ footer {
     justify-content: space-between;
 }
 
-.campo label {
+label {
     width: 100px;
     font-weight: bold;
     text-align: left;
 }
 
-.campo input {
+input {
     flex: 1;
     padding: 8px;
     border: 1px solid #ccc;
@@ -136,26 +138,26 @@ a {
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
     .container {
-        width: 100%; /* Deixa o container ocupar 100% da largura da tela */
+        width: 100%; 
     }
 
     .campo {
-        flex-direction: column; /* Empilha o label e o input na vertical */
-        align-items: flex-start; /* Alinha os itens à esquerda */
+        flex-direction: column; 
+        align-items: flex-start; 
         gap: 5px;
     }
 
     .campo label {
-        width: auto; /* Deixa o label com o tamanho ajustado ao conteúdo */
+        width: auto; 
         text-align: left;
     }
 
     .campo input {
-        width: 100%; /* Faz o input ocupar 100% da largura do campo */
+        width: 100%; 
     }
 
     button {
-        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+        width: 100%; 
     }
 }
 
@@ -184,4 +186,20 @@ a {
 .destaque {
     color: green;
     font-size: 30px;
+}
+
+.cadastro-cliente {
+    background-image: url('unha2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.cadastro-cliente .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
